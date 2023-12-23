@@ -592,7 +592,7 @@ qti_vibrator_hal {
 soong_config_module_type {
     name: "camera_uses_newer_hidl_override_format",
     module_type: "cc_defaults",
-    config_namespace: "blissQcomVars",
+    config_namespace: "blissGlobalVars",
     bool_variables: ["camera_uses_newer_hidl_override_format"],
     properties: [
         "cflags",
@@ -613,7 +613,7 @@ camera_uses_newer_hidl_override_format {
 soong_config_module_type {
     name: "uses_miui_camera",
     module_type: "cc_defaults",
-    config_namespace: "risingGlobalVars",
+    config_namespace: "blissGlobalVars",
     bool_variables: ["uses_miui_camera"],
     properties: ["cppflags"],
 }
@@ -629,7 +629,7 @@ uses_miui_camera {
 soong_config_module_type {
     name: "include_miui_camera",
     module_type: "cc_defaults",
-    config_namespace: "risingGlobalVars",
+    config_namespace: "blissGlobalVars",
     bool_variables: ["include_miui_camera"],
     properties: ["cppflags"],
 }

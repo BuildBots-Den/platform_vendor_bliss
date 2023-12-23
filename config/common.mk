@@ -216,6 +216,9 @@ ifeq ($(BLISS_BUILD_VARIANT), microg)
 $(call inherit-product, vendor/microg/products/gms.mk)
 endif
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/bliss/config/partner_gms.mk
 
